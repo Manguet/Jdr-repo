@@ -1,0 +1,20 @@
+:root {
+    /*TEXT*/
+    --color-text-primary: #F8FAFC;
+    --color-text-secondary: #6D18D7;
+    --color-text-transparent: transparent;
+    --color-error: #FF0000;
+
+    /*BACKGROUND*/
+    --color-bg-primary: #0A0A0B;
+    --color-bg-primary-variant: #09090b97;
+    --color-bg-transparent: transparent;
+
+    /*BORDER*/
+    --color-border-primary: #6D18D7;
+    --color-border-secondary: #F8FAFC;
+
+    /*GRADIENT*/
+    --gradient-primary: linear-gradient(to right, #6D18D7, #2563EB);
+    --gradient-primary-hover: linear-gradient(to right, #7C3AED, #3B82F6);
+}

@@ -1,0 +1,88 @@
+header {
+    background-color: var(--color-bg-primary-variant);
+    height: 56px;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border-primary);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 0 0 var(--spacing-5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .logo {
+    height: 56px;
+    cursor: pointer;
+}
+
+.header_title {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-2);
+}
+
+.header_rightContent{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.header_rightContent a, .header_rightContent button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 var(--spacing-5);
+    position: relative;
+    overflow: hidden;
+    transition-delay: 0.45s;
+}
+
+.header_rightContent a span, .header_rightContent button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+}
+
+.header_rightContent a::before, .header_rightContent button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background:
+            linear-gradient(to right, #7C3AED, #3B82F6) top,
+            linear-gradient(to right, #7C3AED, #3B82F6) bottom;
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+}
+
+.header_rightContent a::after, .header_rightContent button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #7C3AED, #3B82F6);
+    transition: right 0.3s ease;
+    transition-delay: 0.3s;
+    z-index: -1;
+}
+
+.header_rightContent a:hover::before, .header_rightContent button:hover::before {
+    background-size: 100% 1px;
+}
+
+.header_rightContent a:hover::after, .header_rightContent button:hover::after {
+    right: 0;
+}

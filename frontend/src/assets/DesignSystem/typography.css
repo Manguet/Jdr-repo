@@ -1,0 +1,32 @@
+.gradientText{
+    color: var(--color-text-transparent);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.reverseStyle{
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    transition: all 0.3s ease-in-out;
+    background: none;
+    border: none;
+
+    &:hover{
+        color: var(--color-text-primary);
+    }
+}
+
+.reverseStyle svg.icon {
+    stroke: var(--color-text-secondary);
+    transition: stroke 0.3s ease;
+    transition-delay: 0.45s;
+}
+
+.reverseStyle:hover svg.icon {
+    stroke: var(--color-text-primary);
+}
+
+p {
+    margin: 0;
+}

@@ -1,0 +1,33 @@
+.hero{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../assets/images/homepage-hero.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.hero_content h1{
+    font-size: 8rem;
+    margin: 0;
+    text-align: left;
+}
+
+.hero_content p{
+    font-size: var(--font-size-3);
+    font-weight: 400;
+    font-family: var(--font-secondary);
+    margin: 0;
+    text-shadow: var(--shadow-text);
+    max-width: 50%;
+}
